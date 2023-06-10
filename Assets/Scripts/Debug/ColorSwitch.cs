@@ -10,15 +10,13 @@ public class ColorSwitch : MonoBehaviour{
     //Debug Function that
     void Start(){
         sr = GetComponent<SpriteRenderer>();
-        inputManager = FindObjectOfType<InputManager>();
-        inputManager.AnyKeyStartPress.AddListener(Switch);
     }
 
     // Update is called once per frame
     void Update(){
     }
 
-    void Switch(){
+    public void Switch(){
         if (sr.color == color1){
             sr.color = color2;
         }else {
