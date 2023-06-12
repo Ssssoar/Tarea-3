@@ -24,8 +24,7 @@ public class InputManager : MonoBehaviour{
     void Start(){
     }
 
-    // Update is called once per frame
-    void Update(){
+    void FixedUpdate(){
             DirectionalInput?.Invoke(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
         if (Input.anyKeyDown){
             AnyKeyStartPress?.Invoke();
