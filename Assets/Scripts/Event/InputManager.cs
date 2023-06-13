@@ -24,10 +24,14 @@ public class InputManager : MonoBehaviour{
     void Start(){
     }
 
-    void FixedUpdate(){
-            DirectionalInput?.Invoke(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
+    void Update(){
         if (Input.anyKeyDown){
             AnyKeyStartPress?.Invoke();
         }
+    }
+    
+    
+    void FixedUpdate(){
+        DirectionalInput?.Invoke(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
     }
 }

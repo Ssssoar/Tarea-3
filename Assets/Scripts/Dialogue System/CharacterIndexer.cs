@@ -2,29 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterIndexer : MonoBehaviour
-{
+public class CharacterIndexer : MonoBehaviour{
+    //The format of a single Character
     [System.Serializable]
     public struct Character{
-        public int A;
-        public int B;
-        public Character(int a, int b){
-            this.A = a;
-            this.B = b;
+        public string Name;
+        public RuntimeAnimatorController Controller;
+        public Character(string name, RuntimeAnimatorController controller){
+            this.Name = name;
+            this.Controller = controller;
         }
     }
-    
-    public Character char1;
-    public Vector2 vector;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //An array of all the characters that will be in the game
+    public Character[] chars;
 }
