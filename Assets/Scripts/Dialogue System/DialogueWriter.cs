@@ -35,9 +35,18 @@ public class DialogueWriter : MonoBehaviour{
     private bool printing = false;
     
     void OnEnable(){
-        NextLine();
+        NextLine(); 
+        GameObject playerinput = GameObject.FindWithTag("PlayerInput");
+        InputManager script = playerinput.GetComponent<InputManager>();
+        script.enabled = false;
     }
-    
+
+    void OnDisable(){
+        GameObject playerinput = GameObject.FindWithTag("PlayerInput");
+        InputManager script = playerinput.GetComponent<InputManager>();
+        script.enabled = true;
+    }
+
     public void OnInput(){
         if (!printing){
             NextLine();
