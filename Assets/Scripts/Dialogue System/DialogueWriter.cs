@@ -81,6 +81,7 @@ public class DialogueWriter : MonoBehaviour{
             printing = true;
         }else{
             parentObject.SetActive(false);
+            currentLine = -1;
         }
     }
     
