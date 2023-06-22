@@ -456,6 +456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Input Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 9006631371823195983, guid: 13e0a257584ee3441ac86eaca840b2ec, type: 3}
+      propertyPath: m_TagString
+      value: PlayerInput
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e0a257584ee3441ac86eaca840b2ec, type: 3}
 --- !u!4 &3360854195928357150 stripped
