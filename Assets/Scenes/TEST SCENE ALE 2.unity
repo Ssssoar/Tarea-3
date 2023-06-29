@@ -144,15 +144,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.83
+      value: 6.6
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.49
+      value: 3.68
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -186,13 +186,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1173236164}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Malfunction
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FlashlightControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918918, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_Name
-      value: Text Trigger 2
+      value: Break Light
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[0].Mood
@@ -200,8 +232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[0].Text
-      value: Al apretarlo en un objeto que tenga el script apropiado, activa una
-        funcion.
+      value: Skedaddle Skadoodle
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].Mood
@@ -209,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].Text
-      value: De momento solo activa estos dialogos pero puede ser un script cualquiera
+      value: Your flashlight is a noodle
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[2].Mood
@@ -385,6 +416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 619394802}
   - component: {fileID: 619394801}
+  - component: {fileID: 619394803}
   m_Layer: 0
   m_Name: Global Light 2D
   m_TagString: Untagged
@@ -484,26 +516,54 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1055397984
+--- !u!114 &619394803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619394800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea5f11761f67254487d45cc55e4fe64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ONintensity: 1
+  ONcolor: {r: 1, g: 0.9862684, b: 0.759434, a: 1}
+  OFFintensity: 0.1
+  OFFcolor: {r: 0.14413491, g: 0.34772244, b: 0.745283, a: 1}
+--- !u!1001 &763728861
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.084549636
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.93338037
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.29
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.49
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -537,17 +597,77 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 619394803}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1173236162}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LightsOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GlobalLightControls, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918918, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_Name
-      value: Text Trigger
+      value: Lights on
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[0].Text
-      value: Ahora el player tiene un boton de interactuar
+      value: Let there be Light
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].Mood
@@ -555,7 +675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].Text
-      value: Es el control izquierdo (se puede cambiar, obvio)
+      value: No need to thank me
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[0].PrintTime
@@ -579,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
---- !u!1001 &1447209593
+--- !u!1001 &912597977
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -588,15 +708,180 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.31132078
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_Color.g
-      value: 0.1372549
+      value: 0.17593944
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_Color.r
-      value: 0.34897292
+      value: 0.027901383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 619394803}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1173236162}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LightsOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GlobalLightControls, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918918, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Name
+      value: Lights off
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[0].Text
+      value: I am goth I like darks
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[1].Mood
+      value: Happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[1].Text
+      value: No need to thank me
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[0].PrintTime
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[1].Character
+      value: SampleGuy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[1].PrintTime
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[0].DisplayName
+      value: Azul
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: lines.Array.data[1].DisplayName
+      value: Amarillo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+--- !u!1001 &1055397984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8396226
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5132309
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918912, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2891153
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_RootOrder
@@ -604,11 +889,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.89
+      value: 4.88
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.49
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918913, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -653,18 +938,18 @@ PrefabInstance:
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1947617383}
+      objectReference: {fileID: 1173236164}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Activate
+      value: Repair
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Rave, Assembly-CSharp
+      value: FlashlightControl, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
@@ -676,19 +961,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918918, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: m_Name
-      value: Text Trigger 3
+      value: Repair Light
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-      propertyPath: lines.Array.data[0].Mood
-      value: Happy
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[0].Text
-      value: WOOOOOOOOOOOOOOOOOO
+      value: I have repaired your Flashlight
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].Mood
@@ -696,54 +977,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].Text
-      value: Como por ejemplo. . . .
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-      propertyPath: lines.Array.data[2].Mood
-      value: Happy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-      propertyPath: lines.Array.data[2].Text
-      value: Como por ejemplo. . . .
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-      propertyPath: lines.Array.data[0].Character
-      value: SampleGuy
+      value: No need to thank me
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[0].PrintTime
-      value: 0.01
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].Character
-      value: SampleGal
+      value: SampleGuy
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].PrintTime
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-      propertyPath: lines.Array.data[2].Character
-      value: SampleGal
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-      propertyPath: lines.Array.data[2].PrintTime
-      value: 0.05
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[0].DisplayName
-      value: Multicolor
+      value: Amarillo
       objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.data[1].DisplayName
-      value: Rojo
-      objectReference: {fileID: 0}
-    - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-      propertyPath: lines.Array.data[2].DisplayName
-      value: Rojo
+      value: Amarillo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+--- !u!1 &1173236162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 119381152458102771, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
+  m_PrefabInstance: {fileID: 7536570363804892625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1173236164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1246341080964313140, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
+  m_PrefabInstance: {fileID: 7536570363804892625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173236162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a871f0eaa219035498f125b5510ccd82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1664298303
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,25 +1099,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1947617382 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1315475824954918918, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
-  m_PrefabInstance: {fileID: 1447209593}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1947617383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947617382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b819082780d81409e788a8c13243ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1999569509
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +1167,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7536570363804892625
 PrefabInstance:
@@ -920,13 +1176,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1470906155201755301, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7536570362880095853, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7536570362880095854, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7536570362880095854, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -979,7 +1239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9006631371823195981, guid: 13e0a257584ee3441ac86eaca840b2ec, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9006631371823195981, guid: 13e0a257584ee3441ac86eaca840b2ec, type: 3}
       propertyPath: m_LocalPosition.x
