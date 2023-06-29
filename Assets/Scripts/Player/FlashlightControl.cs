@@ -11,9 +11,13 @@ public class FlashlightControl : MonoBehaviour
     public float blinkTime = 0.5f;
     private bool appearing = false;
     private float timeLeft = 0f;
+    public PlayerMovement moveScript;
+    public float playerSlowSpeed = 0.2f;
+    private float playerFullSpeed;
     // Start is called before the first frame update
     void Start(){
         lightComp = lightEffect.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
+        playerFullSpeed = moveScript.speed;
     }
 
     // Update is called once per frame
@@ -29,7 +33,10 @@ public class FlashlightControl : MonoBehaviour
     }
 
     public void Appear(){
-        if (malfunctioning) {
+        if (malfunctioning && isActiveAndEnabled) {
+            //slow down the player
+            moveScript.speed = playerSlowSpeed;
+            //Appear the flashlight
             appearing = true;
             timeLeft = blinkTime;
             lightEffect.SetActive(true);
@@ -38,6 +45,9 @@ public class FlashlightControl : MonoBehaviour
 
     public void Disappear(){
         if (malfunctioning) {
+            //Return player to full speed
+            moveScript.speed = playerFullSpeed;
+            //Dissappear the flashlight
             appearing = false;
             timeLeft = 0f;
             lightEffect.SetActive(false);
