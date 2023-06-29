@@ -10,6 +10,8 @@ public class InputManager : MonoBehaviour{
     public doubleFloatEvent DirectionalInput; //Every frame while the horizontal and vertical axes are being pressed
     public UnityEvent AnyKeyStartPress; //ONLY the beginning of pressing ANY KEY
     public UnityEvent InteractKey;
+    public UnityEvent StartFlashKey;
+    public UnityEvent EndFlashKey;
 
     /* ACTUALLY DON'T WORRY ABOUT HOW TO USE THE EVENTS
         They can be added from the inspector window, ask me (Ale) and I'll tell you how.
@@ -31,6 +33,12 @@ public class InputManager : MonoBehaviour{
         }
         if (Input.GetButtonDown("Interact")){
             InteractKey?.Invoke();
+        }
+        if (Input.GetButtonDown("Flash")){
+            StartFlashKey?.Invoke();
+        }
+        if (Input.GetButtonUp("Flash")){
+            EndFlashKey?.Invoke();
         }
     }
     
