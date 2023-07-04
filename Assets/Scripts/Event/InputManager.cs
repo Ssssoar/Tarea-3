@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour{
     public UnityEvent InteractKey;
     public UnityEvent StartFlashKey;
     public UnityEvent EndFlashKey;
+    public UnityEvent CancelKey;
 
     /* ACTUALLY DON'T WORRY ABOUT HOW TO USE THE EVENTS
         They can be added from the inspector window, ask me (Ale) and I'll tell you how.
@@ -39,6 +40,9 @@ public class InputManager : MonoBehaviour{
         }
         if (Input.GetButtonUp("Flash")){
             EndFlashKey?.Invoke();
+        }
+        if (Input.GetButtonDown("Cancel")){
+            CancelKey?.Invoke();
         }
     }
     
