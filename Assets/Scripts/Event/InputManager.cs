@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 [System.Serializable]
 public class doubleFloatEvent : UnityEvent<float,float> { }
@@ -13,7 +14,6 @@ public class InputManager : MonoBehaviour{
     public UnityEvent StartFlashKey;
     public UnityEvent EndFlashKey;
     public UnityEvent CancelKey;
-
     /* ACTUALLY DON'T WORRY ABOUT HOW TO USE THE EVENTS
         They can be added from the inspector window, ask me (Ale) and I'll tell you how.
         All you need to do is make a separate function that'll handle the input, that way you don't clog any Update calls.
@@ -29,23 +29,35 @@ public class InputManager : MonoBehaviour{
     }
 
     void Update(){
-        if (Input.anyKeyDown){
+        if (Keyboard.current.anyKey.wasPressedThisFrame){
             AnyKeyStartPress?.Invoke();
         }
-        if (Input.GetButtonDown("Interact")){
+        /*if (Input.GetButtonDown("Interact")){
             InteractKey?.Invoke();
         }
         if (Input.GetButtonDown("Flash")){
             StartFlashKey?.Invoke();
-        }
+        }*/
+        /*if (flash && )
         if (Input.GetButtonUp("Flash")){
             EndFlashKey?.Invoke();
-        }
+        }*/
         if (Input.GetButtonDown("Cancel")){
             CancelKey?.Invoke();
         }
     }
     
+    void OnInteract(){
+        InteractKey?.Invoke();
+    }
+    
+    void OnFlashLight(InputValue value){
+        if (value.Get<float>() == 0f){
+            EndFlashKey?.Invoke();
+        }else{
+            StartFlashKey?.Invoke();
+        }
+    }
     
     void FixedUpdate(){
         DirectionalInput?.Invoke(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
