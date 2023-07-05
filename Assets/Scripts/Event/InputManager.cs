@@ -42,9 +42,9 @@ public class InputManager : MonoBehaviour{
         if (Input.GetButtonUp("Flash")){
             EndFlashKey?.Invoke();
         }*/
-        if (Input.GetButtonDown("Cancel")){
+        /*if (Input.GetButtonDown("Cancel")){
             CancelKey?.Invoke();
-        }
+        }*/
     }
     
     void OnInteract(){
@@ -57,6 +57,10 @@ public class InputManager : MonoBehaviour{
         }else{
             StartFlashKey?.Invoke();
         }
+    }
+    
+    void OnPause(){
+        CancelKey?.Invoke();
     }
     
     void FixedUpdate(){
