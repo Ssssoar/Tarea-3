@@ -6,6 +6,7 @@ using UnityEngine;
 public class FlashlightControl : MonoBehaviour
 {
     public GameObject lightEffect;
+    public bool flashlight; //Whether or not the player has the flashlight in their hands
     private bool malfunctioning = false; //Whether the flashlight is currently malfunctioning and therefore needs to be manually activated. Use Malfunction and Repair methods to set this.
     private UnityEngine.Rendering.Universal.Light2D lightComp; //short for light component
     public float blinkTime = 0.5f;

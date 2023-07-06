@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &31503583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 645760306220460119, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
+  m_PrefabInstance: {fileID: 5055551949248919465}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50bd266b72c342e40aa52806a6094e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &196632030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -393,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -406,7 +417,7 @@ PrefabInstance:
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 31503583}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -429,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GlobalLightControls, Assembly-CSharp
+      value: LightsEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -558,7 +569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -571,7 +582,7 @@ PrefabInstance:
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 31503583}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -594,7 +605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GlobalLightControls, Assembly-CSharp
+      value: LightsEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1315475824954918914, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -970,6 +981,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
+      propertyPath: OFFcolor.b
+      value: 0.745283
+      objectReference: {fileID: 0}
+    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
+      propertyPath: OFFcolor.g
+      value: 0.7243969
+      objectReference: {fileID: 0}
+    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
+      propertyPath: OFFcolor.r
+      value: 0.7136436
+      objectReference: {fileID: 0}
+    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
+      propertyPath: OFFintensity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 645760306220460113, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
       propertyPath: m_RootOrder
       value: 9

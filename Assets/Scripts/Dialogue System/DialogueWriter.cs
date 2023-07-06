@@ -45,15 +45,15 @@ public class DialogueWriter : MonoBehaviour{
         lightsScript = GameObject.Find("Global Light 2D").GetComponent<LightsEvent>();
         bgImage = bgImageObject.GetComponent<Image>();
         NextLine(); 
-        GameObject playerinput = GameObject.FindWithTag("PlayerInput");
-        InputManager script = playerinput.GetComponent<InputManager>();
-        script.enabled = false;
+        /*GameObject playerinput = GameObject.FindWithTag("PlayerInput");
+        InputManager script = playerinput.GetComponent<InputManager>(); //FIND AN ALTERNATIVE WAY TO DO THIS
+        script.enabled = false;*/
     }
 
     void OnDisable(){
-        GameObject playerinput = GameObject.FindWithTag("PlayerInput");
+        /*GameObject playerinput = GameObject.FindWithTag("PlayerInput");
         InputManager script = playerinput.GetComponent<InputManager>();
-        script.enabled = true;
+        script.enabled = true;*/ //FIND AN ALTERNATIVE WAY TO DO THIS PROBABLY BY INTERCEPTING EVENTS
     }
 
     public void OnInput(){
