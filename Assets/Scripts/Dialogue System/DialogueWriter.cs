@@ -33,6 +33,7 @@ public class DialogueWriter : MonoBehaviour{
     private int textPointer = 0; //The next char to put in the dialogue box
     private float timer = 0;
     private bool printing = false;
+    private LightsEvent lightsScript;
     
     void OnEnable(){
         NextLine(); 
@@ -51,9 +52,11 @@ public class DialogueWriter : MonoBehaviour{
         if (!printing){
             NextLine();
         }else{
-            printing = false;
-            dialogue.text = textToPrint; 
-            portraitAnim.SetBool("Talking",false);
+            if (currentLine != 0){
+                printing = false;
+                dialogue.text = textToPrint; 
+                portraitAnim.SetBool("Talking",false);
+            }
         }
     }
     
@@ -94,6 +97,10 @@ public class DialogueWriter : MonoBehaviour{
         }
     }
     
+    void Start(){
+        lightsScript = GameObject.Find("Global Light 2D").GetComponent<LightsEvent>();
+    }
+
     void Update(){
         if (printing){
             timer += Time.deltaTime;
@@ -107,5 +114,6 @@ public class DialogueWriter : MonoBehaviour{
                 }
             }
         }
+        portraitAnim.SetBool("Dark",!lightsScript.lights);
     }
 }

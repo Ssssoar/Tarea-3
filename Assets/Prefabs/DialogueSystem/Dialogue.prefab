@@ -230,6 +230,8 @@ MonoBehaviour:
     Controller: {fileID: 9100000, guid: 76fc96e475edb4f43ad19f3b8efe48ed, type: 2}
   - Name: SampleGal
     Controller: {fileID: 9100000, guid: c1973f68b685912469e0c050e8937946, type: 2}
+  - Name: Main
+    Controller: {fileID: 9100000, guid: 40ffaed1d00e4db44b5b55ff3a9fc68c, type: 2}
 --- !u!114 &5451711739054881913
 MonoBehaviour:
   m_ObjectHideFlags: 0
