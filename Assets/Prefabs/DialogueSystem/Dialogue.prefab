@@ -232,6 +232,8 @@ MonoBehaviour:
     Controller: {fileID: 9100000, guid: c1973f68b685912469e0c050e8937946, type: 2}
   - Name: Main
     Controller: {fileID: 9100000, guid: 40ffaed1d00e4db44b5b55ff3a9fc68c, type: 2}
+  - Name: Keko
+    Controller: {fileID: 9100000, guid: 836a44e393db9b14198c2ad8e2beb642, type: 2}
 --- !u!114 &5451711739054881913
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50bd266b72c342e40aa52806a6094e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights: 1
+  lights: 0
   OnLights:
     m_PersistentCalls:
       m_Calls:
