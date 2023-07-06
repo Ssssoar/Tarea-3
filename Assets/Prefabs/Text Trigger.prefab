@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9811321, g: 0.8875196, b: 0.22677112, a: 1}
+  m_Color: {r: 1, g: 0.135849, b: 0.2006923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -140,6 +140,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: FlashlightControl, Assembly-CSharp
+        m_MethodName: Malfunction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &1315475826342747933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,10 +162,6 @@ PrefabInstance:
     - target: {fileID: 5451711738709069184, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_Name
       value: Dialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711738709069184, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_Pivot.x
@@ -209,23 +217,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.96
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -238,134 +246,6 @@ PrefabInstance:
     - target: {fileID: 5451711738709069212, guid: 2679dc613908ca24385182376678698b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[0].Mood
-      value: Happy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[0].Text
-      value: Sample Text
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[1].Mood
-      value: Happy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[1].Text
-      value: Es un Sistema de dialogo!
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[2].Mood
-      value: Happy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[2].Text
-      value: La gracia de esta wea es que es re facil de implementar
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[3].Mood
-      value: Sad
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[3].Text
-      value: Aunque de momento se ve un poco fea...
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[4].Mood
-      value: Neutral
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[4].Text
-      value: Sirve con multiples emociones y sprites de personajes
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[5].Mood
-      value: Happy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[5].Text
-      value: "Y tambi\xE9n se puede modificar la velocidad del texto."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[0].Character
-      value: SampleGuy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[0].PrintTime
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[1].Character
-      value: SampleGuy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[1].PrintTime
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[2].Character
-      value: SampleGuy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[2].PrintTime
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[3].Character
-      value: SampleGuy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[3].PrintTime
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[4].Character
-      value: SampleGal
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[4].PrintTime
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[5].Character
-      value: SampleGal
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[5].PrintTime
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[0].DisplayName
-      value: Mr.Sample
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[1].DisplayName
-      value: Ale
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[2].DisplayName
-      value: Ale
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[3].DisplayName
-      value: Ale
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[4].DisplayName
-      value: Ale pero rosado
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739054881913, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: lines.Array.data[5].DisplayName
-      value: Ale pero rosado
-      objectReference: {fileID: 0}
-    - target: {fileID: 5451711739966266665, guid: 2679dc613908ca24385182376678698b, type: 3}
-      propertyPath: m_Sprite
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2679dc613908ca24385182376678698b, type: 3}

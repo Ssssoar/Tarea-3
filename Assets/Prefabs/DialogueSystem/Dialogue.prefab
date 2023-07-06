@@ -95,7 +95,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5451711738709069212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -228,12 +228,16 @@ MonoBehaviour:
   chars:
   - Name: SampleGuy
     Controller: {fileID: 9100000, guid: 76fc96e475edb4f43ad19f3b8efe48ed, type: 2}
+    Bg: {fileID: 0}
   - Name: SampleGal
     Controller: {fileID: 9100000, guid: c1973f68b685912469e0c050e8937946, type: 2}
+    Bg: {fileID: 0}
   - Name: Main
     Controller: {fileID: 9100000, guid: 40ffaed1d00e4db44b5b55ff3a9fc68c, type: 2}
+    Bg: {fileID: 21300000, guid: c518ddc5fcc06454bbbb70cacab80f53, type: 3}
   - Name: Keko
     Controller: {fileID: 9100000, guid: 836a44e393db9b14198c2ad8e2beb642, type: 2}
+    Bg: {fileID: 21300000, guid: 83f93da4b054dae4091a76a4c4317828, type: 3}
 --- !u!114 &5451711739054881913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +255,28 @@ MonoBehaviour:
   displayName: {fileID: 5451711739264158637}
   portraitAnim: {fileID: 5451711739966266670}
   dialogue: {fileID: 5451711740217964745}
-  lines: []
+  bgImageObject: {fileID: 5451711739379887256}
+  lines:
+  - DisplayName: Keko
+    Character: Keko
+    Mood: Smile
+    Text: Broke your flashlight
+    PrintTime: 0.02
+  - DisplayName: Keko
+    Character: Keko
+    Mood: Smile
+    Text: What are you gonna do about it?
+    PrintTime: 0.02
+  - DisplayName: Keko
+    Character: Keko
+    Mood: Smile
+    Text: Biiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiitch?
+    PrintTime: 0.06
+  - DisplayName: Me
+    Character: Main
+    Mood: Neutral
+    Text: Cry.
+    PrintTime: 0.02
 --- !u!1 &5451711739264158611
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,8 +450,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 138.6659}
-  m_SizeDelta: {x: 0, y: 277.3318}
+  m_AnchoredPosition: {x: 0, y: 175.70212}
+  m_SizeDelta: {x: 0, y: 351.4042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5451711739379887253
 CanvasRenderer:
@@ -449,15 +474,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c518ddc5fcc06454bbbb70cacab80f53, type: 3}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -465,7 +490,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.62
 --- !u!1 &5451711739750638873
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 158.40997, y: -139}
+  m_AnchoredPosition: {x: 158.40997, y: -174}
   m_SizeDelta: {x: 224.5775, y: 224.57721}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5451711739966266664
@@ -610,7 +635,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -213588351, guid: 9d4124ab5a5830648921e75ea6106891, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

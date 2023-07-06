@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.UI;
 
 
 public class DialogueWriter : MonoBehaviour{
@@ -27,6 +28,8 @@ public class DialogueWriter : MonoBehaviour{
     public TMP_Text displayName; //The TextMesh component of the GameObject that holds the name of the character speaking.
     public Animator portraitAnim; //The animator component of the portrait object.
     public TMP_Text dialogue; //The TextMesh component of the GameObject that is the text box.
+    public GameObject bgImageObject; //The Image component of the background Panel
+    private Image bgImage;
     public Line[] lines;
     private int currentLine = -1; //The current line being shown on screen
     private string textToPrint;
@@ -34,8 +37,13 @@ public class DialogueWriter : MonoBehaviour{
     private float timer = 0;
     private bool printing = false;
     private LightsEvent lightsScript;
-    
+
+    void Start(){
+    }
+
     void OnEnable(){
+        lightsScript = GameObject.Find("Global Light 2D").GetComponent<LightsEvent>();
+        bgImage = bgImageObject.GetComponent<Image>();
         NextLine(); 
         GameObject playerinput = GameObject.FindWithTag("PlayerInput");
         InputManager script = playerinput.GetComponent<InputManager>();
@@ -78,6 +86,12 @@ public class DialogueWriter : MonoBehaviour{
                 Debug.Log("The character " + lines[currentLine].Character + " hasn't been found (is it not on the index?)");
                 parentObject.SetActive(false);
             }
+            //we use that index to assign the correct background
+            if(indexer.chars[charIndex].Bg != null) {
+                //Sprite tex = indexer.chars[charIndex].Bg;
+                bgImage.sprite = indexer.chars[charIndex].Bg;
+                //bgImage.sprite = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
+            }
             //we use that index to assign the correct animator to the portrait
             portraitAnim.runtimeAnimatorController = indexer.chars[charIndex].Controller;
             //Next we send the right messages to the Animator component.
@@ -95,10 +109,6 @@ public class DialogueWriter : MonoBehaviour{
             parentObject.SetActive(false);
             currentLine = -1;
         }
-    }
-    
-    void Start(){
-        lightsScript = GameObject.Find("Global Light 2D").GetComponent<LightsEvent>();
     }
 
     void Update(){
