@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8379576979669096854
 Transform:
   m_ObjectHideFlags: 0
@@ -61,9 +61,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightEffect: {fileID: 1470906155201755301}
+  flashLight: 0
   blinkTime: 0.5
   moveScript: {fileID: 9002706063220675304}
   playerSlowSpeed: 0.2
+  lightsScript: {fileID: 0}
 --- !u!1 &126915284880162048
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +599,7 @@ SpriteRenderer:
   m_Size: {x: 20, y: 8.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4328571674357306596
