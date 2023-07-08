@@ -57,6 +57,8 @@ public class FlashlightControl : MonoBehaviour
     public void Malfunction(){
         malfunctioning = true;
         appearing = false;
+        lightComp.intensity = 0f;
+        lightEffect.SetActive(false);
     }
 
     public void Repair(){

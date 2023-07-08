@@ -981,22 +981,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
-      propertyPath: OFFcolor.b
-      value: 0.745283
-      objectReference: {fileID: 0}
-    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
-      propertyPath: OFFcolor.g
-      value: 0.7243969
-      objectReference: {fileID: 0}
-    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
-      propertyPath: OFFcolor.r
-      value: 0.7136436
-      objectReference: {fileID: 0}
-    - target: {fileID: 645760306220460112, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
-      propertyPath: OFFintensity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 645760306220460113, guid: 0b466cb28267e554f9972f488db4574e, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1062,10 +1046,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6425302485107169593, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2042785347, guid: 71dbb7c02af6a00458be1a70194602ba, type: 3}
     - target: {fileID: 7536570362880095853, guid: 812c51102c8cde04492ccc2dad15381b, type: 3}
       propertyPath: m_Name
       value: Player
