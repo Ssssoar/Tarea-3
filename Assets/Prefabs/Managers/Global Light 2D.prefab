@@ -127,9 +127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ONintensity: 1
-  ONcolor: {r: 1, g: 0.9862684, b: 0.759434, a: 1}
-  OFFintensity: 1
-  OFFcolor: {r: 0.7136436, g: 0.7243969, b: 0.745283, a: 1}
+  ONcolor: {r: 0.8490566, g: 0.74627304, b: 0.36445355, a: 1}
+  OFFintensity: 0.3
+  OFFcolor: {r: 0.1533019, g: 0.32704416, b: 0.6132076, a: 1}
 --- !u!114 &645760306220460119
 MonoBehaviour:
   m_ObjectHideFlags: 0
