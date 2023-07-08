@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimControl : MonoBehaviour{
     public Animator anim;
     public Transform TurnObject;
+    public FlashlightControl flashLightScript;
 
     private LightsEvent lightsScript;
 
@@ -25,5 +26,7 @@ public class AnimControl : MonoBehaviour{
             anim.SetFloat("Vertical",vertical);
         }
         anim.SetBool("Dark",!lightsScript.lights);
+        anim.SetBool("FlashLight",flashLightScript.flashLight);
+        anim.SetBool("TurnedOn",flashLightScript.lightEffect.activeSelf);
     }
 }
