@@ -15,7 +15,7 @@ public class FlashlightControl : MonoBehaviour
     public PlayerMovement moveScript;
     public float playerSlowSpeed = 0.2f;
     private float playerFullSpeed;
-    public LightsEvent lightsScript;
+    private LightsEvent lightsScript;
     // Start is called before the first frame update
     void Start(){
         lightComp = lightEffect.GetComponent<UnityEngine.Rendering.Universal.Light2D>();

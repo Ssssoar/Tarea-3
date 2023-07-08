@@ -61,11 +61,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightEffect: {fileID: 1470906155201755301}
-  flashLight: 0
+  flashLight: 1
   blinkTime: 0.5
   moveScript: {fileID: 9002706063220675304}
   playerSlowSpeed: 0.2
-  lightsScript: {fileID: 0}
 --- !u!1 &126915284880162048
 GameObject:
   m_ObjectHideFlags: 0
