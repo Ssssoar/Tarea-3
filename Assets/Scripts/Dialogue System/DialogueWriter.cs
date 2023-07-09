@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
-
+using UnityEngine.InputSystem;
 
 public class DialogueWriter : MonoBehaviour{
     [System.Serializable]
@@ -37,6 +37,7 @@ public class DialogueWriter : MonoBehaviour{
     private float timer = 0;
     private bool printing = false;
     private LightsEvent lightsScript;
+    private PlayerInput inputComp;
 
     void Start(){
     }
@@ -44,16 +45,14 @@ public class DialogueWriter : MonoBehaviour{
     void OnEnable(){
         lightsScript = GameObject.Find("Global Light 2D").GetComponent<LightsEvent>();
         bgImage = bgImageObject.GetComponent<Image>();
-        NextLine(); 
-        /*GameObject playerinput = GameObject.FindWithTag("PlayerInput");
-        InputManager script = playerinput.GetComponent<InputManager>(); //FIND AN ALTERNATIVE WAY TO DO THIS
-        script.enabled = false;*/
+        NextLine();
+        inputComp = GameObject.Find("Player").GetComponentInChildren<PlayerInput>();
+        inputComp.SwitchCurrentActionMap("Frozen");
     }
 
     void OnDisable(){
-        /*GameObject playerinput = GameObject.FindWithTag("PlayerInput");
-        InputManager script = playerinput.GetComponent<InputManager>();
-        script.enabled = true;*/ //FIND AN ALTERNATIVE WAY TO DO THIS PROBABLY BY INTERCEPTING EVENTS
+        inputComp = GameObject.Find("Player").GetComponentInChildren<PlayerInput>();
+        inputComp.SwitchCurrentActionMap("Moving Around");
     }
 
     public void OnInput(){

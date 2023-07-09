@@ -66,4 +66,9 @@ public class InputManager : MonoBehaviour{
     void FixedUpdate(){
         DirectionalInput?.Invoke(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
     }
+    
+    void OnWalk(InputValue value){
+        Vector2 val = value.Get<Vector2>();
+        DirectionalInput?.Invoke(val.x,val.y);
+    }
 }
