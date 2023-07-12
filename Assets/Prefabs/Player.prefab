@@ -1,5 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1999569509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1999569512}
+  - component: {fileID: 1999569511}
+  - component: {fileID: 1999569510}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1999569512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999569509}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4, y: 3.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7536570362880095854}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1999569511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999569509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &1999569510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999569509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!1 &119381152458102771
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightEffect: {fileID: 1470906155201755301}
-  flashLight: 1
+  flashLight: 0
   blinkTime: 0.5
   moveScript: {fileID: 9002706063220675304}
   playerSlowSpeed: 0.2
@@ -862,6 +930,8 @@ GameObject:
   - component: {fileID: 9002706063220675304}
   - component: {fileID: 656099288410680991}
   - component: {fileID: 2336532066658589141}
+  - component: {fileID: 827844474727978131}
+  - component: {fileID: 3675789284849902812}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -889,6 +959,7 @@ Transform:
   - {fileID: 8432126265011745888}
   - {fileID: 1532178395955084094}
   - {fileID: 8270473733642949642}
+  - {fileID: 1999569512}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -904,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028ca933e607be94d9922155acadf3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3.5
   scale: {fileID: 8588217045651142183}
 --- !u!50 &656099288410680991
 Rigidbody2D:
@@ -953,6 +1024,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.428275, y: 0.35408187}
   m_EdgeRadius: 0
+--- !u!210 &827844474727978131
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536570362880095853}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &3675789284849902812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536570362880095853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba1908664248c24eb70e2e6652a1899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Step: 2
+  sortComp: {fileID: 827844474727978131}
 --- !u!1 &8416034260694096858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,10 +2395,30 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 24565fef-8626-4381-98da-075e321225f0
+    m_ActionName: Moving around/Interact[/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e33f38c1-c016-4179-9765-4b70a05b6aab
+    m_ActionName: Moving around/FlashLight[/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8b43b82f-1b03-4920-b165-1529b477dbae
+    m_ActionName: Moving around/Pause[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cef0a0cd-63c0-4e12-bf22-8c027559e9f8
+    m_ActionName: Moving around/Walk[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8a0509d8-5c75-4637-b61a-891ffa2907fa
+    m_ActionName: Frozen/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Moving around
+  m_DefaultActionMap: 4ab44953-2f5b-449b-886d-72ca857de6c8
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!4 &3360854195928357150 stripped

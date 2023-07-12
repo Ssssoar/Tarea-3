@@ -23,4 +23,9 @@ public class GlobalLightControls : MonoBehaviour{
         lightComp.intensity = OFFintensity;
         lightComp.color = OFFcolor;
     }
+    
+    public void CinemaLights(){
+        lightComp.intensity = Random.Range(0.8f,ONintensity);
+        lightComp.color = ONcolor;
+    }
 }

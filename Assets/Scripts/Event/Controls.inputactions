@@ -2,6 +2,34 @@
     "name": "Controls",
     "maps": [
         {
+            "name": "Frozen",
+            "id": "4ab44953-2f5b-449b-886d-72ca857de6c8",
+            "actions": [
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "8a0509d8-5c75-4637-b61a-891ffa2907fa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e4e8af2f-2f0e-4715-9858-19ee5c40fbd8",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "Moving around",
             "id": "7e7e8201-b5d5-4720-b8f0-2bfa94263d1d",
             "actions": [
@@ -130,34 +158,6 @@
                     "action": "Walk",
                     "isComposite": false,
                     "isPartOfComposite": true
-                }
-            ]
-        },
-        {
-            "name": "Frozen",
-            "id": "4ab44953-2f5b-449b-886d-72ca857de6c8",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "c93c9036-7247-43d9-b6b8-2f45e5483f2b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "6740ede3-3e7c-4208-87a4-58a2fefd169e",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }

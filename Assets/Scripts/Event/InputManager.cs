@@ -63,9 +63,9 @@ public class InputManager : MonoBehaviour{
         CancelKey?.Invoke();
     }
     
-    void FixedUpdate(){
+    /*void FixedUpdate(){
         DirectionalInput?.Invoke(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
-    }
+    }*/
     
     void OnWalk(InputValue value){
         Vector2 val = value.Get<Vector2>();

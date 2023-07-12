@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 
 public class LightsEvent : MonoBehaviour{
@@ -9,10 +10,21 @@ public class LightsEvent : MonoBehaviour{
     private bool prevFrame = true;
     public UnityEvent OnLights;
     public UnityEvent OnNoLights;
+    public UnityEvent CinemaLights;
+    public float onTime;
+    private float timer = 0f;
 
     public void LightsOn(){
         if (!lights){
             OnLights?.Invoke();
+            lights = true;
+            prevFrame = true;
+        }
+    }
+    
+    public void CinematicOn(){
+        if(!lights){
+            timer = onTime;
             lights = true;
             prevFrame = true;
         }
@@ -36,6 +48,17 @@ public class LightsEvent : MonoBehaviour{
             }else{
                 lights = true;
                 LightsOff();
+            }
+        }
+        //for what im tentatively calling the "cinematic on"
+        if (timer != 0){
+            CinemaLights?.Invoke();
+            timer -= Time.deltaTime;
+            if (timer < 0){
+                timer = 0;
+                LightsOn();
+                PlayerInput inputComp = GameObject.Find("Player").GetComponentInChildren<PlayerInput>();
+                inputComp.SwitchCurrentActionMap("Moving Around");
             }
         }
     }

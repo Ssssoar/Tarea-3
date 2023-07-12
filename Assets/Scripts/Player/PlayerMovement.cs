@@ -18,8 +18,4 @@ public class PlayerMovement : MonoBehaviour{
     public void Move(float horizontal, float vertical){
         vect = new Vector2(horizontal,vertical);
     }
-    
-    void OnCollisionEnter2D(Collision2D coll){
-        Debug.Log(coll);
-    }
 }

@@ -5,6 +5,7 @@ using TMPro;
 using System;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class DialogueWriter : MonoBehaviour{
     [System.Serializable]
@@ -38,6 +39,7 @@ public class DialogueWriter : MonoBehaviour{
     private bool printing = false;
     private LightsEvent lightsScript;
     private PlayerInput inputComp;
+    public UnityEvent OnFinishDialogue;
 
     void Start(){
     }
@@ -107,6 +109,7 @@ public class DialogueWriter : MonoBehaviour{
         }else{
             parentObject.SetActive(false);
             currentLine = -1;
+            OnFinishDialogue?.Invoke();
         }
     }
 
