@@ -7,6 +7,9 @@ TagManager:
   - Wall
   - Interactable
   - PlayerInput
+  - FlashLight Inner
+  - Inner
+  - Outer
   layers:
   - Default
   - TransparentFX

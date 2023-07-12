@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 6031592471060612037}
   m_Layer: 0
   m_Name: OuterColl
-  m_TagString: Untagged
+  m_TagString: Outer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -777,9 +777,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -5.24, y: 3.07}
-      - {x: 4.19, y: 3.07}
-      - {x: -0.011097759, y: 0.037609696}
+    - - {x: -5.71, y: 5.5644207}
+      - {x: 5.71, y: 5.564421}
+      - {x: 0, y: 0}
 --- !u!1 &5237125652848664786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,8 +1094,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7536570362880095853}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -176062187
+  m_SortingLayer: 1
   m_SortingOrder: 0
 --- !u!114 &3675789284849902812
 MonoBehaviour:
@@ -2075,7 +2075,7 @@ GameObject:
   - component: {fileID: 4298923776215103627}
   m_Layer: 0
   m_Name: InnerColl
-  m_TagString: Untagged
+  m_TagString: Inner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2121,8 +2121,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -1.8527626, y: 5.5644207}
-      - {x: 2.2513993, y: 5.5728254}
-      - {x: -0.011097759, y: 0.037609696}
+      - {x: 1.852763, y: 5.564421}
+      - {x: 0, y: 0}
 --- !u!1001 &2612045221488115581
 PrefabInstance:
   m_ObjectHideFlags: 0
