@@ -11,6 +11,11 @@ public class AnimControl : MonoBehaviour{
 
     private void Start(){
         lightsScript = GameObject.Find("Global Light 2D").GetComponent<LightsEvent>(); //Surely there's an easier way to do this.
+        anim.SetFloat("Rotation",270f);
+        anim.SetBool("Dark",!lightsScript.lights);
+        anim.SetBool("FlashLight", flashLightScript.flashLight);
+        anim.SetBool("TurnedOn", flashLightScript.lightEffect.activeSelf);
+
     }
 
 
@@ -25,8 +30,11 @@ public class AnimControl : MonoBehaviour{
             anim.SetFloat("Horizontal",horizontal);
             anim.SetFloat("Vertical",vertical);
         }
-        anim.SetBool("Dark",!lightsScript.lights);
-        anim.SetBool("FlashLight",flashLightScript.flashLight);
-        anim.SetBool("TurnedOn",flashLightScript.lightEffect.activeSelf);
+    }
+
+    void Update(){
+        anim.SetBool("Dark", !lightsScript.lights);
+        anim.SetBool("FlashLight", flashLightScript.flashLight);
+        anim.SetBool("TurnedOn", flashLightScript.lightEffect.activeSelf);
     }
 }

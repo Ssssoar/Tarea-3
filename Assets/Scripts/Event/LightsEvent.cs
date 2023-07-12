@@ -24,6 +24,7 @@ public class LightsEvent : MonoBehaviour{
     
     public void CinematicOn(){
         if(!lights){
+            LightsOn();
             timer = onTime;
             lights = true;
             prevFrame = true;
@@ -57,8 +58,6 @@ public class LightsEvent : MonoBehaviour{
             if (timer < 0){
                 timer = 0;
                 LightsOn();
-                PlayerInput inputComp = GameObject.Find("Player").GetComponentInChildren<PlayerInput>();
-                inputComp.SwitchCurrentActionMap("Moving Around");
             }
         }
     }
