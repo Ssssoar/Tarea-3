@@ -10,6 +10,7 @@ TagManager:
   - FlashLight Inner
   - Inner
   - Outer
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Wall
-  - 
+  - Flashlight
   - 
   - 
   - 

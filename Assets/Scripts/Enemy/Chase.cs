@@ -21,6 +21,8 @@ public class Chase : MonoBehaviour
             Vector2 vect = GetDirection(target.position, transform.position);
             vect.Normalize();
             rb.velocity = vect * speed;
+        }else{
+        rb.velocity = new Vector2(0f,0f);
         }
     }
 

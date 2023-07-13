@@ -349,7 +349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470906155201755301}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.1530496, y: 0.30265, z: 0}
+  m_LocalPosition: {x: 0.153, y: 0.268, z: 0}
   m_LocalScale: {x: 0.4927548, y: 0.4927548, z: 0.49275476}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -730,7 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6648929287024261697}
   - component: {fileID: 6031592471060612037}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OuterColl
   m_TagString: Outer
   m_Icon: {fileID: 0}
@@ -994,6 +994,8 @@ GameObject:
   - component: {fileID: 2336532066658589141}
   - component: {fileID: 827844474727978131}
   - component: {fileID: 3675789284849902812}
+  - component: {fileID: 2271455581671372696}
+  - component: {fileID: 3930646634636312460}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1073,7 +1075,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0021821558, y: -0.4364313}
+  m_Offset: {x: 0.0021821558, y: -0.29821414}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1084,7 +1086,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.428275, y: 0.35408187}
+  m_Size: {x: 0.428275, y: 0.34228885}
   m_EdgeRadius: 0
 --- !u!210 &827844474727978131
 SortingGroup:
@@ -1110,6 +1112,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortComp: {fileID: 827844474727978131}
+--- !u!114 &2271455581671372696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536570362880095853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1eb35ec72a645341b3a6c2ec69f8e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToListenTo: Enemy
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3930646634636312460}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3930646634636312460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536570362880095853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a375dd83286927e49961a68c31e185e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Main Menu
+  delay: 1
+  fadeAnimator: {fileID: 8797018244947441479}
 --- !u!1 &8416034260694096858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878306054988347554}
   - component: {fileID: 4298923776215103627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InnerColl
   m_TagString: Inner
   m_Icon: {fileID: 0}
