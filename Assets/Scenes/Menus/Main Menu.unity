@@ -1646,6 +1646,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 223284386}
     m_Modifications:
+    - target: {fileID: 1536438103192916184, guid: 6882812826142a744aeebe5144bc55e4, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536438103192916184, guid: 6882812826142a744aeebe5144bc55e4, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536438103192916184, guid: 6882812826142a744aeebe5144bc55e4, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1536438103192916189, guid: 6882812826142a744aeebe5144bc55e4, type: 3}
       propertyPath: m_Name
       value: Fade
