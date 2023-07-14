@@ -16,6 +16,8 @@ public class FlashlightControl : MonoBehaviour
     public float playerSlowSpeed = 0.2f;
     private float playerFullSpeed;
     private LightsEvent lightsScript;
+    public AudioSource audioSource;
+    public float maxVolume;
     // Start is called before the first frame update
     void Start(){
         lightComp = lightEffect.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
@@ -27,11 +29,13 @@ public class FlashlightControl : MonoBehaviour
     void Update(){
         if ((!flashLight)||(lightsScript.lights)){
             lightEffect.SetActive(false);
+            audioSource.volume = 0f;
             //Return player to full speed
             moveScript.speed = playerFullSpeed;
         }else if(!malfunctioning){
             lightComp.intensity = 1f;
             lightEffect.SetActive(true);
+            audioSource.volume = maxVolume;
             //Return player to full speed
             moveScript.speed = playerFullSpeed;
         }else{
@@ -59,6 +63,7 @@ public class FlashlightControl : MonoBehaviour
         appearing = false;
         lightComp.intensity = 0f;
         lightEffect.SetActive(false);
+        audioSource.volume = 0f;
     }
 
     public void Repair(){
@@ -74,6 +79,7 @@ public class FlashlightControl : MonoBehaviour
             appearing = true;
             timeLeft = blinkTime;
             lightEffect.SetActive(true);
+            audioSource.volume = maxVolume;
         }
     }
 
@@ -85,6 +91,7 @@ public class FlashlightControl : MonoBehaviour
             appearing = false;
             timeLeft = 0f;
             lightEffect.SetActive(false);
+            audioSource.volume = 0f;
         }
     }
 }

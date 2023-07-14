@@ -11,6 +11,8 @@ TagManager:
   - Inner
   - Outer
   - Enemy
+  - Music 1
+  - Music 2
   layers:
   - Default
   - TransparentFX

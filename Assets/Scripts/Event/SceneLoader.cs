@@ -29,7 +29,7 @@ public class SceneLoader : MonoBehaviour
         fadeAnimator.SetBool("Fade", true);
         transitioning = true;
     }
-
+    
     public void QuitGame()
     {
 #if UNITY_EDITOR
