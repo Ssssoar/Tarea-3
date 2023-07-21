@@ -1655,7 +1655,7 @@ GameObject:
   - component: {fileID: 1783936553}
   m_Layer: 0
   m_Name: Music Handler
-  m_TagString: Untagged
+  m_TagString: Music 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1683,7 +1683,7 @@ MonoBehaviour:
     Music: {fileID: 8300000, guid: 302acf37511786f4c8e408d1360fb3d4, type: 3}
   - Name: lvl3
     Music: {fileID: 8300000, guid: 302acf37511786f4c8e408d1360fb3d4, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1783936553}
 --- !u!4 &1783936552
 Transform:
   m_ObjectHideFlags: 0
