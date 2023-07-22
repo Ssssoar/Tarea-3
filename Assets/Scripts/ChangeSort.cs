@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 public class ChangeSort : MonoBehaviour{
-    public SortingGroup sortComp;
     public void change(int target){
+        SortingGroup sortComp = GameObject.FindWithTag("Player").GetComponent<SortingGroup>();
         sortComp.sortingOrder = target;
     }
 }
