@@ -48,13 +48,23 @@ public class DialogueWriter : MonoBehaviour{
         lightsScript = GameObject.Find("Global Light 2D").GetComponent<LightsEvent>();
         bgImage = bgImageObject.GetComponent<Image>();
         NextLine();
-        inputComp = GameObject.Find("Player").GetComponentInChildren<PlayerInput>();
-        inputComp.SwitchCurrentActionMap("Frozen");
+        GameObject player = GameObject.Find("Player");
+        if (player != null){
+            inputComp = player.GetComponentInChildren<PlayerInput>();
+        }
+        if (inputComp!= null){
+            inputComp.SwitchCurrentActionMap("Frozen");
+        }
     }
 
     void OnDisable(){
-        inputComp = GameObject.Find("Player").GetComponentInChildren<PlayerInput>();
-        inputComp.SwitchCurrentActionMap("Moving Around");
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null){
+            inputComp = player.GetComponentInChildren<PlayerInput>();
+        }
+        if (inputComp!= null){
+            inputComp.SwitchCurrentActionMap("Moving Around");;
+        }
     }
 
     public void OnInput(){
