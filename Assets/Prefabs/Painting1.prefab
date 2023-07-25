@@ -215,6 +215,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918919, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.41511542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315475824954918919, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.2924423
+      objectReference: {fileID: 0}
     - target: {fileID: 6478952232048173924, guid: 010e40f1f56096e4fbfff565c1e777c1, type: 3}
       propertyPath: lines.Array.size
       value: 2
